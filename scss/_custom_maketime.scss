@@ -37,10 +37,10 @@ $brand-primary:             #00e7b2 !default;
 // MT CUSTOM  ===============================
 $brand-dark:                #02634D !default;
 
-$brand-success:             #5cb85c !default;
-$brand-info:                #5bc0de !default;
-$brand-warning:             #f0ad4e !default;
-$brand-danger:              #d9534f !default;
+$brand-success:             #0BCF60 !default;
+$brand-info:                #00B3FF !default;
+$brand-warning:             #FFB900 !default;
+$brand-danger:              #FF4302 !default;
 
 
 // Options
@@ -50,8 +50,8 @@ $brand-danger:              #d9534f !default;
 $enable-flex:               false !default;
 $enable-rounded:            true !default;
 $enable-shadows:            false !default;
-$enable-gradients:          false !default;
-$enable-transitions:        false !default;
+$enable-gradients:          true !default;
+$enable-transitions:        true !default;
 $enable-hover-media-query:  false !default;
 
 
@@ -159,8 +159,8 @@ $display4-weight:             300 !default;
 $line-height:                1.5 !default;
 
 $headings-margin-bottom:     ($spacer / 2) !default;
-$headings-font-family:       inherit !default;
-$headings-font-weight:       500 !default;
+$headings-font-family:       $font-family-serif !default;
+$headings-font-weight:       700 !default;
 $headings-line-height:       1.1 !default;
 $headings-color:             inherit !default;
 
@@ -431,21 +431,21 @@ $jumbotron-bg:                   $gray-lighter !default;
 //
 // Define colors for form feedback states and, by default, alerts.
 
-$state-success-text:             #3c763d !default;
-$state-success-bg:               #dff0d8 !default;
-$state-success-border:           darken($state-success-bg, 5%) !default;
+$state-success-text:             darken($brand-success, 10%) !default;
+$state-success-bg:               lighten(desaturate($brand-success, 35%), 43%) !default;
+$state-success-border:           darken($state-success-bg, 10%) !default;
 
-$state-info-text:                #31708f !default;
-$state-info-bg:                  #d9edf7 !default;
+$state-info-text:                darken($brand-info, 10%) !default;
+$state-info-bg:                  lighten(desaturate($brand-info, 35%), 43%) !default;
 $state-info-border:              darken($state-info-bg, 7%) !default;
 
-$state-warning-text:             #8a6d3b !default;
-$state-warning-bg:               #fcf8e3 !default;
-$state-warning-border:           darken($state-warning-bg, 5%) !default;
+$state-warning-text:             darken($brand-warning, 10%) !default;
+$state-warning-bg:               lighten(desaturate($brand-warning, 35%), 43%) !default;
+$state-warning-border:           darken($state-warning-bg, 10%) !default;
 
-$state-danger-text:              #a94442 !default;
-$state-danger-bg:                #f2dede !default;
-$state-danger-border:            darken($state-danger-bg, 5%) !default;
+$state-danger-text:              darken($brand-danger, 10%) !default;
+$state-danger-bg:                lighten(desaturate($brand-danger, 35%), 43%) !default;
+$state-danger-border:            darken($state-danger-bg, 10%) !default;
 
 
 // Cards
