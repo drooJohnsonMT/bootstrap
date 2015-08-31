@@ -1,19 +1,39 @@
-# [Bootstrap](http://getbootstrap.com)
 
-[![Slack](https://bootstrap-slack.herokuapp.com/badge.svg)](https://bootstrap-slack.herokuapp.com)
-![Bower version](https://img.shields.io/bower/v/bootstrap.svg)
-[![npm version](https://img.shields.io/npm/v/bootstrap.svg)](https://www.npmjs.com/package/bootstrap)
-[![Build Status](https://img.shields.io/travis/twbs/bootstrap/master.svg)](https://travis-ci.org/twbs/bootstrap)
-[![devDependency Status](https://img.shields.io/david/dev/twbs/bootstrap.svg)](https://david-dm.org/twbs/bootstrap#info=devDependencies)
-[![Selenium Test Status](https://saucelabs.com/browser-matrix/bootstrap.svg)](https://saucelabs.com/u/bootstrap)
+# [Bootstrap](http://getbootstrap.com) — MakeTime Custom Fork
 
 Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development, created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thornton](https://twitter.com/fat), and maintained by the [core team](https://github.com/orgs/twbs/people) with the massive support and involvement of the community.
 
 To get started, check out <http://getbootstrap.com>!
 
-## Table of contents
+## Quick Start - MT Fork
 
-- [Quick start](#quick-start)
+Bootstrap uses Grunt for its CSS and JavaScript build system, and Jekyll for the written documentation. To use these systems, follow these steps:
+
+1. [Download and install Node](https://nodejs.org/download).
+2. Install the Grunt command line tools, `grunt-cli`, with `npm install -g grunt-cli`.
+3. Navigate to the root `/bootstrap` directory and run `npm install` to install the dependencies from the included package.json file.
+4. Install Ruby if you haven't already, and then Bundler with `gem install bundler`. Run `bundle` to install all of the Ruby dependencies like Jekyll and the Sass linter.
+
+### Using Grunt
+
+|TASK           |DESCRIPTION                                                                                                                        |
+|---------------|-----------------------------------------------------------------------------------------------------------------------------------|
+|`grunt`        |Run `grunt` to run tests locally and compile the CSS and JavaScript into `/dist`.                                                  |
+|`grunt dist`   |`grunt dist` creates the `/dist` directory with compiled files.                                                                    |
+|`grunt test`   |Runs JSHint and QUnit tests headlessly in PhantomJS.                                                                               |
+|`grunt docs`   |Builds and tests CSS, JavaScript, and other assets which are used when running the documentation locally via `jekyll serve`.       |
+|`grunt watch`  |This is a convenience method for watching just Sass files and automatically building them whenever you save.                       |
+
+### Local Documentation
+
+Running and serving the documentation locally uses Jekyll. Here's how to access it.
+
+1. The Quick Start section above installed Jekyll and Rouge already, so that's taken care of.
+2. From the root `/bootstrap` directory, run `jekyll serve` in the command line.
+3. open [http://localhost:9001] in your browser.
+
+## Table of contents - Bootstrap Vanilla
+
 - [Bugs and feature requests](#bugs-and-feature-requests)
 - [Documentation](#documentation)
 - [Contributing](#contributing)
@@ -21,19 +41,6 @@ To get started, check out <http://getbootstrap.com>!
 - [Versioning](#versioning)
 - [Creators](#creators)
 - [Copyright and license](#copyright-and-license)
-
-## Quick start
-
-Several quick start options are available:
-
-- [Download the latest release](https://github.com/twbs/bootstrap/archive/v3.3.5.zip).
-- Clone the repo: `git clone https://github.com/twbs/bootstrap.git`.
-- Install with [Bower](http://bower.io): `bower install bootstrap`.
-- Install with [npm](https://www.npmjs.com): `npm install bootstrap`.
-- Install with [Meteor](https://www.meteor.com): `meteor add twbs:bootstrap`.
-- Install with [Composer](https://getcomposer.org): `composer require twbs/bootstrap`.
-
-Read the [Getting started page](http://getbootstrap.com/getting-started/) for information on the framework contents, templates and examples, and more.
 
 ### What's included
 
